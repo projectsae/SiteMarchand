@@ -2,11 +2,11 @@
 
 
 Personnes qui participe au groupe:
-Dufils Nathan
-Bertomeu Tom
-Lacote Mathis
-Lorton Baptiste
-Scordia Guillaume
-Vieville Theo
+Dufils Nathan,
+Bertomeu Tom,
+Lacote Mathis,
+Lorton Baptiste,
+Scordia Guillaume,
+Vieville Theo.
 
 Nous vendons de l'eau du bain de personnes célèbres.
