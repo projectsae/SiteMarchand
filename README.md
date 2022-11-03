@@ -1,7 +1,7 @@
 # SiteMarchand
 
 
-Personnes qui participe au groupe:
+Personnes qui participent au groupe:
 Dufils Nathan,
 Bertomeu Tom,
 Lacote Mathis,
