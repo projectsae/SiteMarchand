@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="achat_css.css">
+    <title>Squeezie</title>
+</head>
+<body>
+    <div class="flex">
+        <div id="caroussel">
+            <div class="diaporama">
+                <img src="img/eau-de-bain-squeezie.jpg" alt="...">
+                <img src="img/eau-de-bain.jpg" alt="...">
+            </div>
+        </div>
+        <div>
+            <h2><b>Eau de bain de Squeezie</b></h2>
+            <input class="prix" id="resultat" type="texte" value="25$" maxlength="4" disabled/>
+            <p>Vous avez toujours rêvé de posséder de l'eau de bain de votre influenceur préféré ? Ce flacon vous est maintenant disponible. Vous pourrez le sentir ou l'exposer pour rendre envieux vos proches. Squeezie est un Youtubeur de renom. En effet, il est le premier Youtubeur français sur la plateforme. Il était donc tout naturel de nous associer à lui. De plus, son "clash" avec le Youtubeur Cyprien ne fait que pimenter les choses, et cela se répercute donc sur son eau de bain ! Alors ne perdez plus votre temps, achetez son eau de bain !</p>
+            <div class="quantite">
+                <form class="choix_quantite">
+                    <input id="moins" type="button" value="-"/>
+                    <input id ="result" type="texte" value="1" maxlength="2" />
+                    <input id="plus" type="button" value="+" />
+                </form>
+                <script>
+                    var res = document.getElementById('result');
+                    result = parseInt(res.value,10);
+    
+                    var plus = document.getElementById('plus');
+                    var moins = document.getElementById('moins');
+    
+                        // prendre en compte la modification du nombre au clavier
+                        res.addEventListener('blur', function() {
+                        result = document.getElementById('result');
+                                result = parseInt(result.value,10);
+                        });
+                        
+                        // boutton +
+                        plus.addEventListener('click', function() {
+                        if(result >= 0 && result < 99){
+                        result++;
+                        document.getElementById('result').value= result;
+                        }
+                        });
+                        
+                        // boutton -
+                        moins.addEventListener('click', function() {
+                        if(result > 0 && result <= 99){
+                        result--;
+                        document.getElementById('result').value= result;
+                        }
+                        });
+                </script>
+                <select class="taille" onclick="fonction(this.value)">
+                    <option id="vingt-cinq" value="25$">25 cl</option>
+                    <option id="cinquante" value="50$">50 cl</option>
+                    <option id="soixante-cinq" value="75$">75 cl</option>
+                    <option id="cent" value="100$">100 cl</option>
+                </select>
+                <script>
+                        function fonction(valeur){
+                            document.getElementById('resultat').value = valeur;
+                        };
+                </script>
+            </div>
+            <p class="precision">La quantité et la taille du produit peut encore être modifié</p>
+            <div class="acheter">
+                <input class="bouton black" type="button" value="Ajouter au panier">
+                <input class="bouton blue" type="button" value="Acheter maintenant">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
