@@ -1,0 +1,253 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.flex{
+    display: flex;
+    margin: 10em;
+    margin-right: 10em;
+}
+
+.prix{
+  border: none;
+  background: none;
+  color: black;
+  font-size: 2em;
+  padding: 0em;
+  padding-bottom: 1em;
+}
+
+#caroussel{
+  width: 1500px;
+  height: 500px;
+  overflow: hidden;
+  margin-right: 5em;
+}
+
+.diaporama{
+  display: flex;
+  animation-duration: 10s;
+  animation-delay: 3s;
+  animation-name: mesImages;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mesImages {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+h2{
+    font-size: 3em;
+}
+
+h3{
+    font-size: 2em;
+    margin-bottom: 1em;
+    font-weight: lighter;
+}
+
+p{
+    margin-bottom: 3em;
+    text-align: justify;
+}
+
+.taille{
+    text-align: center;
+    width: 12em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    background: none;
+    border: solid;
+    border-radius: 2px;
+    border-color: gray;
+    height: 3.1879em;
+}
+  .taille:hover{
+    cursor: pointer;
+  }
+
+input{
+    padding: 1em;
+    border: none;
+    background: none;
+  }
+  
+  input#result{
+    text-align: center;
+    width: 4em;
+  }
+  input#plus{
+    text-align: center;
+    width: 3em;
+  }
+  input#plus:hover{
+    cursor:pointer;
+    font-weight: bold;
+  }
+  input#moins{
+    text-align: center;
+    width: 3em;
+  }
+  input#moins:hover{
+    cursor:pointer;
+    font-weight: bold;
+  }
+
+.quantite{
+    display: flex;
+    justify-content: left;
+    margin-right: 0em;
+    margin-bottom: 1em;
+}
+
+.choix_quantite{
+  border: solid;
+  border-radius: 2px;
+  border-color: gray;
+  height: 3em;
+}
+
+.precision{
+    color: gray;
+    font-size: 0.8em;
+}
+
+.acheter{
+    display: flex;
+    justify-content: left;
+}
+  .acheter input{
+    width: 12.5em;
+    border: none;
+    border-radius: 0.2em;
+  }
+
+  .black{
+    background-color: darkgray;
+    color: black;
+    margin-right: 2em;
+  }
+
+  .black:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+
+  .blue{
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  .blue:hover{
+    background-color:rgb(36, 36, 168);
+    cursor: pointer;
+  }
+
+@media screen and (max-width: 1800px){
+  .flex{
+    margin-right: 10em;
+  }
+
+  #caroussel{
+    width: 2500px;
+  }
+}
+
+@media screen and (max-width: 1584px){
+
+  .flex{
+    margin-right: 10em;
+  }
+
+  #caroussel{
+    width: 3000px;
+  }
+}
+
+@media screen and (max-width: 1415px){
+
+  .flex{
+    margin-right: 4em;
+    margin-left: 4em;
+  }
+
+  #caroussel{
+    width: 3000px;
+  }
+}
+
+@media screen and (max-width: 1319px){
+
+  .flex{
+    margin-right: 3em;
+    margin-left: 3em;
+  }
+
+  #caroussel{
+    width: 4000px;
+  }
+}
+
+@media screen and (max-width: 1125px){
+
+  #caroussel{
+    width: 55000px;
+  }
+
+  .quantite{
+    flex-direction: column-reverse;
+  }
+
+  .quantite form, .quantite .taille{
+    align-self: center;
+    margin-bottom: 1em;
+  }
+
+  .taille{
+    margin-left: 0em;
+    width: 12.7435em;
+  }
+
+  .precision{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1077px){
+
+  .flex{
+    margin-right: 10em;
+    margin-left: 10em;
+    flex-direction: column;
+  }
+
+  #caroussel{
+    align-self: center;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 5em;
+    margin-right: 0em;
+  }
+
+  .quantite, .acheter{
+    justify-content: center;
+    margin: 0;
+    flex-direction: initial;
+  }
+
+  .taille{
+    margin-left: 2em;
+  }
+}
