@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="achat_css.css">
+    <title>Hideo Kojima</title>
+</head>
+<body>
+    <div class="flex">
+        <div id="caroussel">
+            <div class="diaporama">
+                <img src="img/eau-de-bain-kojima.png" alt="...">
+                <img src="img/eau-de-bain.jpg" alt="...">
+            </div>
+        </div>
+        <div>
+            <h2><b>Eau de bain de Hideo Kojima</b></h2>
+            <input class="prix" id="resultat" type="texte" value="25$" maxlength="4" disabled/>
+            <p>Vous aimez vous faufilez sans alerter les gardes à cause de votre gros postérieur ? Les complots politiques plus complexes que les algorithmes de la NASA ne vous font pas peur ? Vous adorerez l’eau de bain Hideo Kojima ! Vous pourrez ainsi écrire des histoires qui ne font aucun sens mais quand même être acclamé par les critiques ! Les randonnées avec 40 kg de marchandises sur le dos et un bébé sur le ventre ne seront qu’une promenade de santé ! Alors achetez ce flacon et ouvrez-vous une cannette de Monster Energy ! Cependant, attention aux canulars impliquant un premier ministre japonais !</p>
+            <div class="quantite">
+                <form class="choix_quantite">
+                    <input id="moins" type="button" value="-"/>
+                    <input id ="result" type="texte" value="1" maxlength="2" />
+                    <input id="plus" type="button" value="+" />
+                </form>
+                <script>
+                    var res = document.getElementById('result');
+                    result = parseInt(res.value,10);
+    
+                    var plus = document.getElementById('plus');
+                    var moins = document.getElementById('moins');
+    
+                        // prendre en compte la modification du nombre au clavier
+                        res.addEventListener('blur', function() {
+                        result = document.getElementById('result');
+                                result = parseInt(result.value,10);
+                        });
+                        
+                        // boutton +
+                        plus.addEventListener('click', function() {
+                        if(result >= 0 && result < 99){
+                        result++;
+                        document.getElementById('result').value= result;
+                        }
+                        });
+                        
+                        // boutton -
+                        moins.addEventListener('click', function() {
+                        if(result > 0 && result <= 99){
+                        result--;
+                        document.getElementById('result').value= result;
+                        }
+                        });
+                </script>
+                <select class="taille" onclick="fonction(this.value)">
+                    <option id="vingt-cinq" value="25$">25 cl</option>
+                    <option id="cinquante" value="50$">50 cl</option>
+                    <option id="soixante-cinq" value="75$">75 cl</option>
+                    <option id="cent" value="100$">100 cl</option>
+                </select>
+                <script>
+                        function fonction(valeur){
+                            document.getElementById('resultat').value = valeur;
+                        };
+                </script>
+            </div>
+            <p class="precision">La quantité et la taille du produit peut encore être modifié</p>
+            <div class="acheter">
+                <input class="bouton black" type="button" value="Ajouter au panier">
+                <input class="bouton blue" type="button" value="Acheter maintenant">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="achat_css.css">
+    <title>Keanu Reeves</title>
+</head>
+<body>
+    <div class="flex">
+        <div id="caroussel">
+            <div class="diaporama">
+                <img src="img/eau-de-bain-keanu.png" alt="...">
+                <img src="img/eau-de-bain.jpg" alt="...">
+            </div>
+        </div>
+        <div>
+            <h2><b>Eau de bain de Keanu Reeves</b></h2>
+            <input class="prix" id="resultat" type="texte" value="25$" maxlength="4" disabled/>
+            <p>Fatigué après une journée dans la matrice ? Are you breathtaking? Ce flacon estampillé Keanu Reeves est fait pour vous ! Nous sommes allés jusqu’à Night City pour concevoir l’eau de bain Keanu Reeves. Attention cependant, selon votre état d’esprit vous pourriez tout aussi bien déprimer sur un banc ou rentrer dans une folie meurtrière armé d’un simple crayon à papier ! Ce qui est sûr, c’est que vos talents au combat rapproché et de tir avec des armes à feu variées vont se développer à une vitesse folle ! Attention toutefois à ne pas se faire tuer son chien et voler sa voiture !</p>
+            <div class="quantite">
+                <form class="choix_quantite">
+                    <input id="moins" type="button" value="-"/>
+                    <input id ="result" type="texte" value="1" maxlength="2" />
+                    <input id="plus" type="button" value="+" />
+                </form>
+                <script>
+                    var res = document.getElementById('result');
+                    result = parseInt(res.value,10);
+    
+                    var plus = document.getElementById('plus');
+                    var moins = document.getElementById('moins');
+    
+                        // prendre en compte la modification du nombre au clavier
+                        res.addEventListener('blur', function() {
+                        result = document.getElementById('result');
+                                result = parseInt(result.value,10);
+                        });
+                        
+                        // boutton +
+                        plus.addEventListener('click', function() {
+                        if(result >= 0 && result < 99){
+                        result++;
+                        document.getElementById('result').value= result;
+                        }
+                        });
+                        
+                        // boutton -
+                        moins.addEventListener('click', function() {
+                        if(result > 0 && result <= 99){
+                        result--;
+                        document.getElementById('result').value= result;
+                        }
+                        });
+                </script>
+                <select class="taille" onclick="fonction(this.value)">
+                    <option id="vingt-cinq" value="25$">25 cl</option>
+                    <option id="cinquante" value="50$">50 cl</option>
+                    <option id="soixante-cinq" value="75$">75 cl</option>
+                    <option id="cent" value="100$">100 cl</option>
+                </select>
+                <script>
+                        function fonction(valeur){
+                            document.getElementById('resultat').value = valeur;
+                        };
+                </script>
+            </div>
+            <p class="precision">La quantité et la taille du produit peut encore être modifié</p>
+            <div class="acheter">
+                <input class="bouton black" type="button" value="Ajouter au panier">
+                <input class="bouton blue" type="button" value="Acheter maintenant">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
