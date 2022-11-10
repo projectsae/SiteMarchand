@@ -1,0 +1,383 @@
+@font-face {
+    font-family: 'Public Sans';
+    src: url('../fonts/PublicSans-VariableFont_wght.ttf') format('truetype');
+}
+  
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+  
+body {
+    height: 133vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.header {
+    height: auto;
+    width: 100vw;
+    background: #f9829b;
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.float_left {
+    padding-left: 119px;
+}
+
+.float_left li {
+    float: left;
+}
+
+.float_right {
+    padding-right: 141.25px;
+}
+
+.float_right li {
+    float: right;
+}
+
+.header li p {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding-left: 7.72px;
+
+    font-family: 'Inter';
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    margin-top: 20px;
+}
+
+.float_left li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+
+    font-family: 'Inter';
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+}
+
+.float_right li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+
+    font-family: 'Inter';
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+}
+
+.float_left .logo {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+hr {
+    opacity: 0.5;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    display: inline;
+}
+
+.navbar img {
+    height: 16px;
+    width: 16px;
+    padding-left: 16px;
+}
+
+.panier {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+
+    font-family: 'Inter';
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+}
+
+.search {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+
+    font-family: 'Inter';
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+}
+
+.search input {
+    background-color: #f9829b;
+    border: none;
+    outline: none;
+
+    font-family: 'Inter';
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+::placeholder {
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.banner {
+    margin-top: 34px;
+    padding-bottom: 47px;
+    margin-left: 145px;
+    color: #FFFFFF;
+}
+
+.banner h1 {
+    font-family: 'Public Sans';
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    text-align: left;
+    width: fit-content;
+}
+
+.banner p {
+    font-family: 'Public Sans';
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    text-align: left;
+    line-height: 26px;
+    margin-right: 57vw;
+}
+
+
+
+.filters {
+    position: relative;
+    height: 100%;
+    width: 373px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.filters ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 145px;
+    margin-top: 20px;
+}
+
+.filters li {
+    display: flex;
+    margin-bottom: 10.38px;
+}
+
+.title {
+    display: flex;
+    margin-left: 145px;
+}
+
+.filters h1 {
+    font-family: 'Public Sans';
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.55px;
+    text-align: left;
+
+    margin-top: 43px;
+    padding-right: 8px;
+}
+
+.filters a {
+    color: #C4C4C4;
+
+    font-family: 'Public Sans';
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    text-align: left;
+    text-decoration: underline;
+
+    margin-top: 48px;
+}
+
+.filters h2 {
+    font-family: 'Public Sans';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;
+    margin-left: 145px;
+}
+
+.filters label {
+    font-family: 'Public Sans';
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    text-align: left;
+    padding-left: 12px;
+    margin-top: 12.5px;
+}
+
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    margin-top: 10.38px;
+}
+
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    border: 1px solid #0D0D0D;
+    background-color: #FFFFFF;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 6.25px;
+    height: 12.5px;
+    border: solid #0D0D0D;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2.5px;
+    left: 7.5px;
+}
+
+.page {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+}
+
+.articles {
+    margin-top: 137px;
+    margin-right: 10vw;
+    margin-left: 52px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5vw;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.card {
+    transition: 0.3s;
+    width: 18vw;
+    height: min-content;
+    width: auto;
+    border-radius: 5px;
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+    width:264px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+    font-family: Public Sans;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;
+    height: auto;
+}
+
+.sortbox {
+    position: absolute;
+    border: 1px solid #1C275A;
+    background-color: #FFFFFF;
+    height: auto;
+
+    right: 142px;
+    top: 46px;
+}
+
+.sortbox select {
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    color: #0D0D0D;
+
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -0.3px;
+    text-align: left;
+
+    padding: 6px 0;
+    margin-right: 14px;
+}
+
+.sortbox label {
+    font-family: 'Inter';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.3px;
+    text-align: left;
+
+    padding: 6px 12px;
+}
+
+.tri p {
+    position: absolute;
+    right: 140px;
+    top: 75px;
+
+    font-family: 'Public Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.4px;
+    text-align: left;
+}

@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Public Sans';
+    src: url('../fonts/PublicSans-VariableFont_wght.ttf') format('truetype');
+}
+  
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+  
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: blue;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+
+nav li {
+    display: inline-block;
+    background-color: aqua;
+    margin: 18px 10%;
+}
